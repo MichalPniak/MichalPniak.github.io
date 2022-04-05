@@ -1,0 +1,23 @@
+{
+  "name": "michalpniak-github-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -o ./resources/css/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalPniak/MichalPniak.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalPniak/MichalPniak.github.io/issues"
+  },
+  "homepage": "https://github.com/MichalPniak/MichalPniak.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
