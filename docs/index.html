@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Michał Pniak - Portfolio</title>
 
     <link rel="stylesheet" href="resources/css/app.css">
+    <script src="https://kit.fontawesome.com/fc9b67aed1.js" crossorigin="anonymous"></script>
 </head>
-<body class="h-screen bg-gray-50">
-    <h1 class="text-2xl">Hello world!</h1>
+<body class="bg-gray-900 text-white mx-12 my-8 md:mx-24 md:my-12">
+    <nav class="flex justify-between">
+        <button type="button" class="md:hidden">
+            <i class="fa-solid fa-bars cursor-pointer text-2xl"></i>
+        </button>
+        <ul class="hidden md:flex gap-8">
+            <li class="hover:text-blue-700 cursor-pointer text-lg"><a href="#intro">Intro</a></li>
+<!--            <li class="hover:text-blue-700 cursor-pointer text-lg"><a href="#experience">Doświadczenie</a></li>-->
+<!--            <li class="hover:text-blue-700 cursor-pointer text-lg"><a href="#contact">Kontakt</a></li>-->
+        </ul>
+        <div>
+            <ul class="flex gap-8">
+                <li>
+                    <a href="https://github.com/MichalPniak" target="_blank">
+                        <i class="fa-brands fa-github hover:text-blue-700 cursor-pointer text-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/micha%C5%82-pniak-6257681bb/" target="_blank">
+                        <i class="fa-brands fa-linkedin hover:text-blue-700 cursor-pointer text-2xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="intro">
+        <h1 class="text-5xl md:text-6xl font-bold mt-12 md:mt-24">Cześć, jestem <br>Michał Pniak.</h1>
+        <p class="font-bold text-lg mt-8">PHP Developer</p>
+        <div class="mb-8 space-y-2 max-w-prose">
+            <p class="font-light">
+                Jestem absolwentem technikum o profilu informatycznym.
+            </p>
+            <p class="font-light">
+                Uczestniczyłem w projekcie "Zawodowcy na Start" oraz w projekcie Erasmusa,
+                który przygotował mnie do pracy zespołowej.
+            </p>
+            <p class="font-light">
+                Od 2020 roku pracuję jako PHP Developer w firmie <a href="https://edokumenty.eu/" target="_blank" class="underline hover:text-blue-700">eDokumenty</a>.
+            </p>
+        </div>
+        <a href="https://www.linkedin.com/in/micha%C5%82-pniak-6257681bb/" target="_blank" class="underline underline-offset-2 font-bold">Pozostańmy w kontakcie na LinkedIn</a>
+    </header>
+    <section id="experience" class="mt-24">
+        <h2 class="text-4xl font-bold">Doświadczenie</h2>
+    </section>
+    <footer id="contact">
+
+    </footer>
 </body>
 </html>
