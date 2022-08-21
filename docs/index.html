@@ -1,61 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michał Pniak - Portfolio</title>
 
-    <link rel="stylesheet" href="resources/css/app.css">
+    <!-- Primary Meta Tags -->
+    <title>Michał Pniak | Portfolio</title>
+    <meta name="title" content="Michał Pniak | Portfolio">
+    <meta name="description" content="Od 2020 roku pracuję jako PHP Developer. Jestem absolwentem technikum o profilu informatycznym.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michalpniak.github.io/">
+    <meta property="og:title" content="Michał Pniak | Portfolio">
+    <meta property="og:description" content="Od 2020 roku pracuję jako PHP Developer. Jestem absolwentem technikum o profilu informatycznym.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://michalpniak.github.io/">
+    <meta property="twitter:title" content="Michał Pniak | Portfolio">
+    <meta property="twitter:description" content="Od 2020 roku pracuję jako PHP Developer. Jestem absolwentem technikum o profilu informatycznym.">
+
+    <link rel="stylesheet" href="css/app.css">
     <script src="https://kit.fontawesome.com/fc9b67aed1.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-900 text-white mx-12 my-8 md:mx-24 md:my-12">
-    <nav class="flex justify-between">
-        <button type="button" class="md:hidden">
-            <i class="fa-solid fa-bars cursor-pointer text-2xl"></i>
-        </button>
-        <ul class="hidden md:flex gap-8">
-            <li class="hover:text-blue-700 cursor-pointer text-lg"><a href="#intro">Intro</a></li>
-<!--            <li class="hover:text-blue-700 cursor-pointer text-lg"><a href="#experience">Doświadczenie</a></li>-->
-<!--            <li class="hover:text-blue-700 cursor-pointer text-lg"><a href="#contact">Kontakt</a></li>-->
-        </ul>
-        <div>
-            <ul class="flex gap-8">
-                <li>
-                    <a href="https://github.com/MichalPniak" target="_blank">
-                        <i class="fa-brands fa-github hover:text-blue-700 cursor-pointer text-2xl"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/micha%C5%82-pniak-6257681bb/" target="_blank">
-                        <i class="fa-brands fa-linkedin hover:text-blue-700 cursor-pointer text-2xl"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header id="intro">
-        <h1 class="text-5xl md:text-6xl font-bold mt-12 md:mt-24">Cześć, jestem <br>Michał Pniak.</h1>
-        <p class="font-bold text-lg mt-8">PHP Developer</p>
-        <div class="mb-8 space-y-2 max-w-prose">
-            <p class="font-light">
-                Jestem absolwentem technikum o profilu informatycznym.
-            </p>
-            <p class="font-light">
-                Uczestniczyłem w projekcie "Zawodowcy na Start" oraz w projekcie Erasmusa,
-                który przygotował mnie do pracy zespołowej.
-            </p>
-            <p class="font-light">
-                Od 2020 roku pracuję jako PHP Developer w firmie <a href="https://edokumenty.eu/" target="_blank" class="underline hover:text-blue-700">eDokumenty</a>.
-            </p>
-        </div>
-        <a href="https://www.linkedin.com/in/micha%C5%82-pniak-6257681bb/" target="_blank" class="underline underline-offset-2 font-bold">Pozostańmy w kontakcie na LinkedIn</a>
-    </header>
-    <section id="experience" class="mt-24">
-        <h2 class="text-4xl font-bold">Doświadczenie</h2>
-    </section>
-    <footer id="contact">
+<body class="px-12 mx-auto mt-8 md:px-24 md:mt-12 xl:w-[1200px]">
 
-    </footer>
+    <nav aria-label="Linki społecznościowe.">
+        <ul class="flex justify-end gap-4">
+            <li>
+                <a href="https://github.com/MichalPniak" target="_blank">
+                    <span class="sr-only">Profil na git-hubie.</span>
+                    <i class="fa-brands fa-github text-[#333] cursor-pointer text-2xl" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/micha%C5%82-pniak-6257681bb/" target="_blank">
+                    <span class="sr-only">Profil na LinkedIn.</span>
+                    <i class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer text-2xl" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="mt-4">
+        <h1 class="text-5xl md:text-6xl font-bold tracking-wide text-brand-900" aria-labelledby="page-description">
+            <span>Cześć, jestem </span><span>Michał&nbsp;Pniak, </span><span class="text-brand-500">PHP&nbsp;Developer.</span>
+        </h1>
+        <div id="page-description" class="mt-8">
+            <div class="mt-4 space-y-2">
+                <p>Jestem absolwentem technikum o&nbsp;profilu informatycznym.
+                    W&nbsp;2018&nbsp;roku uczestniczyłem w&nbsp;projekcie <span class="font-semibold">"Zawodowcy&nbsp;na&nbsp;Start"</span>, dzięki&nbsp;któremu zdobyłem doświadczenie inwentaryzacji sprzętu komputowegowe.
+                    W&nbsp;2019&nbsp;roku brałem udział w&nbsp;projekcie <span class="font-semibold">ERASMUS</span>, w&nbsp;którym zdobyłem doświadczenie pracy w&nbsp;zespole, zarządzania zespołem oraz&nbsp;tworzenia witryn internetowych.
+                    Od&nbsp;2020&nbsp;roku pracuję jako <span class="font-semibold">PHP&nbsp;Developer</span> w&nbsp;firmie <a href="https://edokumenty.eu/" target="_blank" class="link">eDokumenty</a>.</p>
+            </div>
+        </div>
+        <p class="mt-4">
+            <a href="https://www.linkedin.com/in/micha%C5%82-pniak-6257681bb/" target="_blank" class="link text-lg font-bold">Pozostańmy w kontakcie na LinkedIn</a>
+        </p>
+    </header>
+
+    <main class="py-12 space-y-12">
+<!--        <section id="tech-stack" class="group" aria-labelledby="tech-stack-title">-->
+<!--            <h2 class="bg-white sticky top-0 z-10 py-4" id="tech-stack-title" aria-label="Tech stack"><a href="#tech-stack">Tech stack</a></h2>-->
+
+<!--        </section>-->
+
+<!--        <section id="project" class="group" aria-labelledby="project-title">-->
+<!--            <h2 class="bg-white sticky top-0 z-10 py-4" id="project-title" aria-label="Projekty"><a href="#project">Projekty</a></h2>-->
+
+<!--        </section>-->
+
+        <section id="experience" class="group" aria-labelledby="experience-title">
+            <h2 class="bg-white sticky top-0 z-10 py-4" id="experience-title" aria-label="Doświadczenie"><a href="#experience">Doświadczenie</a></h2>
+
+            <ul class="mt-4 divide-y-2 divide-gray-200 space-y-4" aria-label="Oś czasu zdobytego doświadczenia.">
+
+                <li>
+                    <div class="grid grid-cols-[75px_auto]">
+                        <div class="grid justify-center">
+                            <img width="48" height="48" alt="Logo eDokumenty sp. z o.o." src="https://media-exp1.licdn.com/dms/image/C560BAQFY9h5D4d7fnQ/company-logo_100_100/0/1519886546966?e=1669248000&amp;v=beta&amp;t=WYqCaM2W9OEKjLt_gvDLGY71dMcy4463Wl_jkn5dKRk" loading="lazy">
+                        </div>
+                        <div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/10626595" target="_blank">
+                                    <h3 class="hover:link font-bold">eDokumenty sp. z o.o.</h3>
+                                    <div>
+                                        <p>Pełny etat · 2 lata 1 mies.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-6">
+                                <ul class="space-y-4">
+                                    <li class="relative">
+                                        <span class="absolute left-[-45px] top-[6px] bg-gray-300 rounded-full w-[11px] h-[11px]"></span>
+                                        <span class="absolute left-[-41px] top-[25px] w-[3px] h-[calc(100%_-_10px)] bg-gray-300 rounded-full"></span>
+                                        <a href="https://www.linkedin.com/company/10626595" target="_blank">
+                                            <h4 class="hover:link font-bold">Programista PHP</h4>
+                                            <div>
+                                                <p>lis 2021 – obecnie · 10 mies.</p>
+                                                <p>Warszawa, Woj. Mazowieckie, Polska</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="relative">
+                                        <span class="absolute left-[-45px] top-[6px] bg-gray-300 rounded-full w-[11px] h-[11px]"></span>
+                                        <a href="https://www.linkedin.com/company/10626595" target="_blank">
+                                            <h4 class="hover:link font-bold">Młodszy programista PHP</h4>
+                                            <div>
+                                                <p>sie 2020 – lis 2021 · 1 rok 4 mies.</p>
+                                                <p>Warszawa, Woj. Mazowieckie, Polska</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="grid grid-cols-[75px_auto] mt-4">
+                        <div class="grid justify-center">
+                            <img width="48" height="48" alt="Firma bez logotypu" src="https://static-exp1.licdn.com/sc/h/aajlclc14rr2scznz5qm2rj9u" loading="lazy">
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="font-bold">Praktyka zawodowa w ramach projektu ERASMUS</h3>
+                                <div>
+                                    <p>Georgikes Ekmetaleuseis & Training Services · Praktyka</p>
+                                    <p>paź 2019 · 1 mies.paź 2019 · 1 mies. Grecja</p>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <p class="font-semibold">Zdobyte umiejętności:</p>
+                                <ul class="list-disc mt-2">
+                                    <li>Praca indywidualna i w zespole nad powierzonymi projektami, posługiwanie się językiem angielskim branżowym,</li>
+                                    <li>przygotowywanie specyfikacji technicznej oraz kosztorysu projektu strony internetowej klienta,</li>
+                                    <li>projektowanie właściwej struktury witryny, dopasowanej do potrzeb klienta,</li>
+                                    <li>budowa, konfiguracja, wypełnianie treścią witryny internetowej,</li>
+                                    <li>przygotowywanie dokumentacji projektowej,</li>
+                                    <li>publikacji utworzonej witryny w sieci, testowanie jakości,</li>
+                                    <li>umiejętności pracy i komunikacji w zespole, planowanie pracy i ustalanie priorytetów,</li>
+                                    <li>nadzorowanie i monitorowanie powierzonych obowiązków,</li>
+                                    <li>budowanie właściwych relacji w środowisku pracy.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="grid grid-cols-[75px_auto] mt-4">
+                        <div class="grid justify-center">
+                            <img width="48" height="48" alt="Firma bez logotypu" src="https://static-exp1.licdn.com/sc/h/aajlclc14rr2scznz5qm2rj9u" loading="lazy">
+                        </div>
+                        <div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/6823252" target="_blank">
+                                    <h3 class="hover:link font-bold">Praktyka zawodowa w ramach Technikum</h3>
+                                    <div>
+                                        <p>METROBIT.PL · Praktyka</p>
+                                        <p>lut 2019 – mar 2019 · 2 mies.</p>
+                                        <p>Teresin, Woj. Mazowieckie, Polska</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-6">
+                                <p class="font-semibold">Zdobyte umiejętności:</p>
+                                <ul class="list-disc mt-2">
+                                    <li>Projekt i wykonanie aplikacji webowej dla ewidencji przyjmowanego sprzętu do serwisu,</li>
+                                    <li>wprowadzanie danych asortymentu do sklepu internetowego.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="grid grid-cols-[75px_auto] mt-4">
+                        <div class="grid justify-center">
+                            <img width="48" height="48" alt="Logo LOT Aircraft Maintenance Services" src="https://media-exp1.licdn.com/dms/image/C560BAQHpCmEXJ_rVDA/company-logo_100_100/0/1519881565940?e=1669248000&v=beta&t=NjBaGoHWa__Gl2ZcHAAldBtlDWiYD1bbHX8S_DKJnhM" loading="lazy">
+                        </div>
+                        <div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/2756672" target="_blank">
+                                    <h3 class="hover:link font-bold">Praktyka zawodowa w ramach projektu Unii Europejskiej „Zawodowcy na start”</h3>
+                                    <div>
+                                        <p>LOT Aircraft Maintenance Services · Praktyka</p>
+                                        <p>sie 2018 · 1 mies.</p>
+                                        <p>Warszawa, Woj. Mazowieckie, Polska</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-6">
+                                <p class="font-semibold">Zdobyte umiejętności:</p>
+                                <ul class="list-disc mt-2">
+                                    <li>Praca w zespole przy inwentaryzacji sprzętu komputerowego,</li>
+                                    <li>konfiguracja komputerowego stanowiska pracy.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
