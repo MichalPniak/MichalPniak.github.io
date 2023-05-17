@@ -4,7 +4,8 @@
     "description": "",
     "main": "tailwind.config.js",
     "scripts": {
-        "dev": "npx tailwindcss -i ./src/css/app.css -o ./docs/css/app.css --watch"
+        "dev": "npx tailwindcss -i ./src/css/app.css -o ./build/css/app.css --watch",
+        "build": "npx tailwindcss -i ./src/css/app.css -o ./build/css/app.css"
     },
     "repository": {
         "type": "git",
